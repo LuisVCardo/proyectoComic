@@ -34,9 +34,10 @@ $(document).ready(function(){
               $("#iddots").hide();
           }else{
               var slideIndex = 1;
+              var dothtml="";
               $(".slideshow-container").show();
               $("#iddots").show();
-              showSlides(slideIndex);       
+              showSlides(slideIndex);    
           }
     });
 });

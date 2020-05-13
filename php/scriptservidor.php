@@ -102,8 +102,10 @@
                     $html.="  <div class='mySlides'";
                     if($cont==1){   //En la primera iteración mostramos la imagen
                         $html.=" style='display:block'";
+                    }else{
+                         $html.=" style='display:none'";
                     }
-                    $html.="><div class='numbertext'>".$cont." / ".$cuenta."</div><img src=img/".$dato['nombre_img']." style='width:100%'><div class='text'>".$dato['titulo']."</div> </div>";
+                    $html.="><div class='numbertext'>".$cont." / ".$cuenta."</div><img src=img/".$dato['nombre_img']." style='width:50%'><div class='text'>".$dato['titulo']."</div> </div>";
                     $cont++;
                 }
                 echo $html;

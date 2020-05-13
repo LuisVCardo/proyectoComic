@@ -1,4 +1,4 @@
-<div>
+<div id="divselectcarrusel">
     <select name="carrueditorial" id="icarrueditorial">
         <?php  include "llenarEditorial.php" ?>
     </select>
@@ -18,7 +18,7 @@
 
 <!-- The dots/circles -->
 <div id="iddots" style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
+ <!-- <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>-->
 </div>

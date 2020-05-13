@@ -36,7 +36,8 @@
         <tr>
 <!--            <td><input type="hidden" name="MAX_FILE_SIZE" value="30000" />-->
     <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
-            </td>
+           <!-- </td>-->
+            
             <td>Enviar este fichero: <input name="ifichero" type="file" id="ifichero"></td>
         </tr>
     </table>

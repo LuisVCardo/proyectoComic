@@ -165,6 +165,16 @@ $(document).ready(function(){
               data:{editorial:editorial,script:script},
               success:function(html){
                   $("#divcarrusel").html(html);
+                  /*Poner tantos puntos como comics encuentre*/
+                  var numerotext =html.indexOf("numbertext");   //Cogemos el número de comics encontrados    
+                  var letranum = html.substring(numerotext+16,numerotext+17);
+                  var dothtml="";
+                  for(var i=1;i<=letranum;i++){
+                    dothtml+="<span class='dot' onclick='currentSlide("+i+")'></span>";
+                  }   
+                  
+                  $("#iddots").html(dothtml);
+
               },
              error: function(){
                 alert("error en ajax");   
